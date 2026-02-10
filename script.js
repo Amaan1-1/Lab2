@@ -4,7 +4,7 @@ mapboxgl.accessToken = 'pk.eyJ1IjoiYW1hYW5iIiwiYSI6ImNtbGRkZW1meDFhdjMzZXEzb25yd
 const map = new mapboxgl.Map({
     container: 'my-map', // map container ID
     style: 'mapbox://styles/amaanb/cmlfrw1us00ho01qq1aad4yvb', //style URL
-    center: [-79.195614, 43.786977], // starting position [lng, lat] changed to be centered around Scarborough
+    center: [-79.295614, 43.786977], // starting position [lng, lat] changed to be centered around Scarborough
     zoom: 10.4, // starting zoom to fit all points
 }); 
 
