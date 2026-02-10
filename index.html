@@ -1,4 +1,5 @@
 <head>
+<!--All the meta tags and Mapbox GL script incorporation -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My first web map</title>
@@ -9,6 +10,32 @@
 </head>
 
 <body>
+    <div class ="header">
+      <!-- Page header showing title-->
+      <h1> Web Map of Walmart Locations</h1>
+      <p> 
+        This map shows locations of Walmart and No Frills stores in the Scarborough area. <br>
+        So we can visualize how close the different stores are to each other
+      </p>
+    </div>
+    <!-- Creating a legend with a blue circle to signify Walmart on the map-->
+     <!-- And a yellow circle to signify No Frills on the map-->
+    <div class ="legend">
+      <h1>Legend</h1>
+      <div class ="walmart_legend">Walmart 🔵
+            <!-- Created a button with unique id but same class as no frills-->
+            <!-- To make editing this button in CSS easier but allow JS to edit-->
+            <!-- the buttons seperately -->
+        <button class = "visualize_button" id="walmart_button">Hide</button>
+      </div>
+      <br>
+      <div class ="nofrill_legend">No Frills 🟡
+        <!-- Same button class as Walmart but different ID-->
+        <button class = "visualize_button" id="nofrill_button">Hide</button>
+      </div>
+    </div>
+    <!-- Div that holds the map container-->
     <div id="my-map" class="map-container"></div>
+    <!-- Linking script to html-->
     <script src="script.js"></script>
 </body>
